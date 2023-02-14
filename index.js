@@ -4,5 +4,7 @@ const { Person } = require("./person");
 
 //importando um arquivo para ser executado
 //require("./modules/path");
-require("./modules/fs");
+// require("./modules/fs")
+
+require("./modules/http");
 const person = new Person("Jeremias", 19);
