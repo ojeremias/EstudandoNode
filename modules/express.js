@@ -7,6 +7,7 @@ app.get("/home", (req, res) => {
   res.status(200).send("<h1>Hello World</h1>");
 });
 
+//utilizamos o get para pegar uma lista de usuários
 app.get("/users", (req, res) => {
   const users = [
     {
@@ -18,6 +19,12 @@ app.get("/users", (req, res) => {
       email: "Jane@doe.com",
     },
   ];
+  res.status(200).json(users);
+});
+
+//criação de registro no nosso banco
+app.post("/users", (req, res) => {
+  req.body;
 });
 
 const port = 8080;
