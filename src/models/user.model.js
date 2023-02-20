@@ -1,6 +1,7 @@
-const mongoose = require("mongoose");
+//após ter criado já um banco, é necessário determinarmos quais serão os tipos de dados. Ou seja, o modelo de dados
+const mongoose = require("mongoose"); //imporatndo mongoose
 
-const userSchema = new mongoose.Schema({
+const userScheme = new mongoose.Schema({
   firstName: {
     type: String,
     required: true,
@@ -16,10 +17,9 @@ const userSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    minlength: 7,
+    minLength: 7,
   },
 });
-
-const UserModel = mongoose.model("User", userSchema);
+const UserModel = mongoose.model("User", userScheme);
 
 module.exports = UserModel;
