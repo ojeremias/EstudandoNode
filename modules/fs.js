@@ -27,7 +27,7 @@ fs.writeFile(
       "Toma!",
       (error) => {
         if (error) {
-          return console.error("Algo deu errado, meu nobre", error);
+          return console.error("Algo deu errado: ", error);
         }
         console.log("Arquivo modificado com sucesso!");
       }
