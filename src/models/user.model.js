@@ -1,4 +1,4 @@
-//após ter criado já um banco, é necessário determinarmos quais serão os tipos de dados. Ou seja, o modelo de dados
+//após ter criado já um banco, é necessário determinarmos quais serão os tipos de dados. Ou seja, o modelo de dados;
 const mongoose = require("mongoose"); //imporatndo mongoose
 
 const userScheme = new mongoose.Schema({
